@@ -14,6 +14,22 @@ import HomeScreen from "./screens/app/home";
 import SplashScreen from "./screens/app/splash";
 import RegisterScreen from "./screens/app/register";
 import ConfirmationScreen from "./screens/app/confirmation";
+import ProfessionalScreen from "./screens/app/professional";
+import Appoint1Screen from "./screens/app/appoint1";
+import Appoint2Screen from "./screens/app/appoint2";
+import Appoint3Screen from "./screens/app/appoint3";
+import Appoint4Screen from "./screens/app/appoint4";
+import BadgeScreen from "./screens/app/badge";
+import BusinessScreen from "./screens/app/business";
+import CouponScreen from "./screens/app/coupon";
+import FavoritesScreen from "./screens/app/favorites";
+import FiltersScreen from "./screens/app/filters";
+import NotificationsScreen from "./screens/app/notifications";
+import ProfileScreen from "./screens/app/profile";
+import RatingScreen from "./screens/app/rating";
+import SearchScreen from "./screens/app/search";
+import SidemenuleftScreen from "./screens/app/sidemenuleft";
+
 
 class LoadingScreen extends React.Component {
     constructor(props) {
@@ -48,17 +64,62 @@ const styles = StyleSheet.create({
 const AppStack = createDrawerNavigator(
     {
         AppRoot: createStackNavigator({
-            Home: {
-                screen: HomeScreen,
-            },
-            Confirmation: {
-                screen: ConfirmationScreen,
+            Register: {
+                screen: RegisterScreen,
             },
             Splash: {
                 screen: SplashScreen,
             },
-            Register: {
-                screen: RegisterScreen,
+            Confirmation: {
+                screen: ConfirmationScreen,
+            },
+            Professional: {
+                screen: ProfessionalScreen,
+            },
+            Appoint1: {
+                screen: Appoint1Screen,
+            },
+            Appoint2: {
+                screen: Appoint2Screen,
+            },
+            Appoint3: {
+                screen: Appoint3Screen,
+            },
+            Appoint4: {
+                screen: Appoint4Screen,
+            },
+            Home: {
+                screen: HomeScreen,
+            },
+            Badge: {
+                screen: BadgeScreen,
+            },
+            Business: {
+                screen: BusinessScreen,
+            },
+            Coupon: {
+                screen: CouponScreen,
+            },
+            Favorites: {
+                screen: FavoritesScreen,
+            },
+            Filters: {
+                screen: FiltersScreen,
+            },
+            Notifications: {
+                screen: NotificationsScreen,
+            },
+            Profile: {
+                screen: ProfileScreen,
+            },
+            Rating: {
+                screen: RatingScreen,
+            },
+            Search: {
+                screen: SearchScreen,
+            },
+            Sidemenuleft: {
+                screen: SidemenuleftScreen,
             },
         })
     },

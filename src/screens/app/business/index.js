@@ -29,9 +29,9 @@ export default class Business extends Component {
     }
 
     onNavigatorEvent(event) {
-        // if (event.type == "DeepLink") {
-        //     this.props.navigator.push({ screen: event.link });
-        // }
+        if (event.type == "DeepLink") {
+            this.props.navigator.push({ screen: event.link });
+        }
     }
 
     render() {
@@ -46,8 +46,7 @@ export default class Business extends Component {
                     >
                     <LinearGradient colors={['#000','transparent']} style={styles.linearGradient}>
                         <View style={styles.headerbuttons}>
-                            {/* <TouchableOpacity onPress={() => this.props.navigator.toggleDrawer({ side: 'left' })}> */}
-                            <TouchableOpacity onPress={() => false}>
+                            <TouchableOpacity onPress={() => this.props.navigator.toggleDrawer({ side: 'left' })}>
                                 <Icon type='font-awesome' name="bars" color='#FFF' iconStyle={styles.icons}/>
                             </TouchableOpacity>
                             <Icon type='font-awesome' name="share" color='#FFF' iconStyle={styles.icons} />
@@ -81,7 +80,7 @@ export default class Business extends Component {
                 </View>
 
                 <View style={styles.tab}>
-                    <TouchableOpacity>
+                <TouchableOpacity>
                         <Text style={styles.tabs}>SERVIÇOS</Text> 
                     </TouchableOpacity>
                     <TouchableOpacity>
@@ -95,7 +94,7 @@ export default class Business extends Component {
                 <View style={styles.linetab2}/>
 
                 <View style={styles.tab1}>
-                    <TouchableOpacity style={styles.tab2} onPress={() => false}>
+                <TouchableOpacity style={styles.tab2} onPress={() => false}>
                         <Image
                         source={require("../../../assets/images/foto16.png")}
                             style={{marginBottom: 5, width: 60, height: 60, borderRadius: 30, borderWidth: 2, borderColor: 'rgba(28,187,156,1)'}}
@@ -134,18 +133,6 @@ export default class Business extends Component {
                         <Text style={styles.texticons}>THIEL</Text>
                     </TouchableOpacity>                          
                     
-                </View>
-
-                <View style={styles.button}>
-                    <Button
-                        backgroundColor="#1CBB9C"
-                        color="#FFF"
-                        borderRadius={5}
-                        title="AGENDAR UM HORÁRIO"
-                        onPress={() =>
-                            false
-                        }
-                    />
                 </View>
 
                 <View style={styles.map}>
